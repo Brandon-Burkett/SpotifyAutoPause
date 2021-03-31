@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "SpotifyAutoPause",
+    "description": "Controls Spotify playback based on whether or not a Chrome tab is playing audio.",
+    "version": "1.0.0",
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": true
+    },
+    "permissions": ["tabs", "identity"],
+    "browser_action": {
+        "default_popup": "popup.html",
+        "defualt_icon": "icon.png"
+    }
+}

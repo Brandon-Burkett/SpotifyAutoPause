@@ -1,0 +1,49 @@
+body {
+    background-color: #808080;
+    padding: 20px;
+    display: block;
+    border-radius: 100px;
+    text-shadow: 1px 1px 1px black;
+    letter-spacing: 1px;
+}
+
+h1 {
+    color: white;
+}
+
+h3 {
+    color: white;
+    display: inline;
+}
+
+div {
+    width: 100%;
+    margin: 10px;
+}
+
+button {
+
+    background-color: #062589;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
