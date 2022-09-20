@@ -1,44 +1,81 @@
 body {
-    background-color: #808080;
-    padding: 20px;
-    display: block;
-    border-radius: 100px;
-    text-shadow: 1px 1px 1px black;
-    letter-spacing: 1px;
+    padding-inline: 1rem;
+    background-color: white;
 }
 
-h1 {
-    color: white;
+h1, h2, h3, h4, h5, h6 {
+    color: black;
 }
 
-h3 {
-    color: white;
-    display: inline;
-}
-
-div {
-    width: 100%;
-    margin: 10px;
-}
-
-button {
-
-    background-color: #062589;
-    /* Green */
-    border: none;
-    color: white;
-    padding: 8px 16px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 12px;
-    border-radius: 12px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 90%;
+img {
+    max-width: 250px;
 
 }
+
+.playback-info__artist {
+    color: #2A6194;
+}
+
+.playback-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    color: black;
+}
+.playback-controls button {
+    cursor: pointer;
+    height: 2rem;                        /* be sure to set height & width */
+    width:  2rem;
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	outline: inherit;
+
+    /* Hide the text. */
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.playback-controls__play, .playback-controls__pause{
+    height: 3rem !important;
+    width: 3rem !important;
+    margin-inline: 1rem;
+}
+.playback-controls__pause {
+    display: none;
+}
+.playback-controls__backtrack {
+    background-image: url(../assets/backtrack.svg) !important;
+}
+.playback-controls__play {
+    background-image: url(../assets/playbutton.svg) !important;
+}
+.playback-controls__pause {
+    background-image: url(../assets/pausebutton.svg) !important;
+}
+.playback-controls__forwardtrack {
+    background-image: url(../assets/forwardtrack.svg) !important;
+}
+
+.spotify-logo {
+    display: flex;
+    justify-content: center;
+}
+.spotify-logo img {
+    max-width: 5rem;
+}
+
+
+
+
 
 .green {
     color: green;

@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Audio Checker</title>
+    <title>SpotifyAutoPause</title>
     <script type="module" src="../js/popup.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/popup.css" />
   </head>
 
   <body>
-    <div>
+    <header>
       <h1>SpotifyAutoPause</h1>
-    </div>
+    </header>
+
+    <main>
+      <div class="playback-info">
+        <img
+          class="playback-info__image"
+          src="https://i.scdn.co/image/ab67656300005f1fe8ce898f100ac74c036fb469"
+          alt="Playback"
+        />
+        <h2 class="playback-info__title">Title</h2>
+        <h3 class="playback-info__artist">Artist</h3>
+      </div>
+      <div class="playback-controls">
+        <button class="playback-controls__backtrack">Backtrack</button>
+        <button class="playback-controls__play">Play</button>
+        <button class="playback-controls__pause">Pause</button>
+        <button class="playback-controls__forwardtrack">Forwardtrack</button>
+      </div>
+      <div class="spotify-logo">
+        <img src="../assets/Spotify_Logo_RGB_Black.png" alt="Spotify" />
+      </div>
+    </main>
 
     <div id="enabled" style="visibility: hidden; display: none">
       <h3>Status:</h3>
@@ -31,7 +52,6 @@
     </div>
   </body>
 </html>
-
 
 <!-- <div class="wrapper">
   <img class="bg" src="https://i.scdn.co/image/ab67616d00001e02e31a279d267f3b3d8912e6f1">
